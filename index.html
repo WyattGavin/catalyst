@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vital</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            background-color: black;
+            border-bottom: 1px solid rgb(172, 172, 172);
+            box-shadow: 0 4px 16px 0px rgba(255, 255, 255, 0.428);
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(13, 13, 13);
+        }
+
+        .container.header {
+            width: 80%;
+        }
+        .row.header {
+            display: flex;
+        }
+        .col.header {
+        }
+
+        .col.header.brand {
+            width: 15%;
+        }
+
+        .col.header.nav{
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        .col.header.end {
+            width: 45%;
+        }
+
+        .col.header.brand h1 {
+            color: white;
+            font-family: "Barlow", sans-serif;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+
+        .col.header.nav nav ul {
+            display: flex;
+            padding: 0;
+        }
+        .col.header.nav li {
+            list-style-type: none;
+        }
+        .col.header.nav a {
+            color: white;
+            text-decoration: none;
+            font-family: "Barlow", sans-serif;
+            font-size: 20px;
+            margin: 0px 40px 0px 0px;
+            letter-spacing: 1.3px;
+            padding: 4px;
+            transition: all 0.2s ease;
+        }
+        .col.header.nav a:hover{
+            border-bottom: white solid 2px;
+        }
+
+        .col.header.end {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .col.header.end ul {
+            display: flex;
+        }
+        .col.header.end li {
+            margin: 0px 0px 0px 20px;
+        }
+        .col.header.end a{
+            text-decoration: none;
+            font-family: "Barlow", sans-serif;
+            font-weight: 500;
+            letter-spacing: 1.2px;
+            font-size: 18px;
+        }
+
+
+        #login-btn,
+        #register-btn {
+            padding: 5px 10px 5px 10px;
+            border-radius: 5px;
+        }
+
+        #login-btn {
+            color: white;
+        }
+        #register-btn {
+            color: rgb(0, 0, 0);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="container header">
+            <div class="row header">
+                <div class="col header brand">
+                    <h1>VITAL</h1>
+                </div>
+                <div class="col header nav">
+                    <nav>
+                        <ul>
+                            <li><a href="">products</a></li>
+                            <li><a href="">about us</a></li>
+                            <li><a href="">about products</a></li>
+                            <li><a href="">research</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col header end">
+                    <ul>
+                        <li><a id="login-btn" href="/html/login.html">login</a></li>
+                        <li><a id="register-btn" href="/html/register.html">register</a></li>                     
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <style>
+        .container.main.headline {
+            margin-top: 40px;
+            width: 80%;
+        }
+        .row.main.headline {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            border: rgba(255, 255, 255, 0.672) 2px solid;
+            overflow: hidden;
+        }
+        .col.main.headline {
+            width: 50%;
+        }
+        .headline.img{
+            width: 50%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .col.main.headline.aside aside {
+            padding: 40px;
+        }
+        .col.main.headline.aside h1, p {
+            font-family: "Barlow", sans-serif;
+        }
+        .col.main.headline.aside h1 {
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            letter-spacing: 2px;
+            margin: 0;
+            font-style: italic;
+        }
+        .col.main.headline.aside p {
+            color: rgb(160, 160, 160);
+            font-weight: light;
+        }
+    </style>
+    <main>
+        <section class="container main headline">
+            <div class="row main headline">
+                <img class="headline img" src="supplements headline.webp" alt="">
+                <div class="col main headline aside">
+                    <aside class="aside headline">
+                        <h1>our supplements...</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure repellat soluta dolor est architecto quae provident pariatur quaerat porro dolorem totam necessitatibus, optio non quos ex aliquid! Corrupti, impedit cumque.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <section class="container main supplements-display">
+            <div class="row main supplements-display">
+                <div class="col main supplements-display">
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
